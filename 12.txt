@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+
+void binar(int n)
+{
+    if (n == 0) return;
+    binar(n / 2);
+    cout << (n % 2);
+}
+
+int main() 
+{
+    int num;
+    cin >> num;
+
+    if (num == 0) cout << "0";
+    else binar(num);
+
+    cout << endl;
+
+    return 0;
+}
+        //podobna do większości

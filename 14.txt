@@ -1,0 +1,13 @@
+#include <iostream>
+#include <bitset>  //liczby jko cią bitów
+
+using namespace std;
+
+int main() 
+{
+    int num;
+    cin >> num;
+    cout << bitset<32>(num) << endl; //do 32 miejsc bitowych
+    
+    return 0;
+}
